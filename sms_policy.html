@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpsKPI — Paul Davis Restoration | Operational Alerts</title>
+  <style>
+    :root {
+      --pd-blue: #003366;
+      --pd-red: #cc0000;
+      --pd-gold: #c8952e;
+      --pd-light: #f4f6f9;
+      --pd-white: #ffffff;
+      --pd-gray: #5a6a7a;
+      --pd-border: #dde3ea;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: var(--pd-light);
+    }
+
+    /* ---- Header ---- */
+    header {
+      background: var(--pd-blue);
+      color: var(--pd-white);
+      padding: 0;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 24px;
+    }
+    .logo-area h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+    .logo-area h1 span { color: var(--pd-gold); }
+    .logo-area p {
+      font-size: .85rem;
+      opacity: .8;
+      margin-top: 2px;
+    }
+    .contact-bar {
+      font-size: .85rem;
+      text-align: right;
+    }
+    .contact-bar a {
+      color: var(--pd-gold);
+      text-decoration: none;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+      background: linear-gradient(135deg, var(--pd-blue) 0%, #004e8c 100%);
+      color: var(--pd-white);
+      text-align: center;
+      padding: 48px 24px 40px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: .9;
+    }
+
+    /* ---- Content ---- */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      background: var(--pd-white);
+      border: 1px solid var(--pd-border);
+      border-radius: 8px;
+      padding: 32px;
+      margin: 24px 0;
+    }
+    section h3 {
+      color: var(--pd-blue);
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--pd-gold);
+    }
+    section h4 {
+      color: var(--pd-blue);
+      font-size: 1.05rem;
+      margin: 20px 0 8px;
+    }
+    section p, section li {
+      color: #444;
+      font-size: .95rem;
+      margin-bottom: 10px;
+    }
+    section ul {
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    section ul li { margin-bottom: 6px; }
+
+    .highlight-box {
+      background: var(--pd-light);
+      border-left: 4px solid var(--pd-gold);
+      padding: 16px 20px;
+      margin: 16px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .highlight-box p { margin-bottom: 4px; }
+
+    .sms-example {
+      background: #e8f0e8;
+      border: 1px solid #b8d4b8;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 10px 0;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: .9rem;
+      color: #333;
+      max-width: 480px;
+    }
+    .sms-label {
+      font-size: .75rem;
+      color: #888;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      background: var(--pd-blue);
+      color: rgba(255,255,255,.7);
+      text-align: center;
+      padding: 24px;
+      margin-top: 40px;
+      font-size: .85rem;
+    }
+    footer a {
+      color: var(--pd-gold);
+      text-decoration: none;
+    }
+    footer .footer-links {
+      margin-top: 8px;
+    }
+    footer .footer-links a {
+      margin: 0 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-top">
+      <div class="logo-area">
+        <h1>Paul Davis <span>Restoration</span></h1>
+        <p>Houston, TX — KHTX Operations</p>
+      </div>
+      <div class="contact-bar">
+        <div>Houston, TX Metropolitan Area</div>
+        <div><a href="mailto:ops@devkhtxpdr.com">ops@devkhtxpdr.com</a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>OpsKPI — Operational Intelligence Platform</h2>
+    <p>Real-time KPI measurement, SLA compliance tracking, fleet management, and operational alerting for Paul Davis Restoration field operations.</p>
+  </div>
+
+  <!-- About -->
+  <div class="container">
+
+    <section>
+      <h3>About Our Company</h3>
+      <p>Paul Davis Restoration is a national leader in property damage restoration, serving residential and commercial customers across the United States. Our Houston (KHTX) franchise provides emergency mitigation, mold remediation, reconstruction, and contents restoration services.</p>
+      <p><strong>OpsKPI</strong> is our internal operational intelligence platform that tracks job performance, SLA compliance, fleet health, workforce scheduling, and financial metrics across all service divisions. It is used exclusively by Paul Davis employees and management.</p>
+    </section>
+
+    <!-- SMS Program -->
+    <section id="sms-program">
+      <h3>SMS Alerts Program</h3>
+      <p>Paul Davis Restoration operates an internal SMS alert system to notify employees about critical operational events. This program is <strong>not customer-facing</strong> — messages are sent only to company employees who have opted in.</p>
+
+      <h4>What Messages Are Sent</h4>
+      <ul>
+        <li><strong>Pipeline Failure Alerts</strong> — Notifications when data extraction or processing systems encounter errors requiring attention.</li>
+        <li><strong>Health Check Warnings</strong> — Alerts when operational data pipelines are overdue, returning errors, or showing anomalies.</li>
+        <li><strong>Fleet Alerts</strong> — Critical vehicle maintenance notifications including overdue oil changes, expired registrations, recalls, and toll citations.</li>
+      </ul>
+
+      <h4>Message Frequency</h4>
+      <p>Message frequency varies based on operational events. Typical volume is <strong>1–5 messages per week</strong>. During system issues, temporary spikes may occur but will not exceed 10 messages per day.</p>
+
+      <h4>Message and Data Rates</h4>
+      <p>Standard message and data rates may apply based on your mobile carrier plan.</p>
+
+      <h4>Example Messages</h4>
+      <div class="sms-label">System Alert</div>
+      <div class="sms-example">
+        [OpsKPI] 2 pipeline(s) FAILED: compliance, xactanalysis. Check logs. Reply HELP for info, STOP to opt out.
+      </div>
+      <div class="sms-label">Fleet Alert</div>
+      <div class="sms-example">
+        [OpsKPI] Fleet: 3 critical alert(s) — oil_change, registration. Check dashboard. Reply HELP for info, STOP to opt out.
+      </div>
+
+      <h4>How to Opt In</h4>
+      <p>During employee onboarding, team members are informed about the operational SMS alert system. Employees provide their mobile phone number and give documented consent to receive operational alerts. Enrollment is voluntary.</p>
+
+      <h4>How to Opt Out</h4>
+      <div class="highlight-box">
+        <p><strong>Reply STOP</strong> to any message at any time to unsubscribe from all operational alerts. You will receive a single confirmation message. No further messages will be sent after opting out.</p>
+        <p><strong>Reply HELP</strong> to any message for support information and contact details.</p>
+      </div>
+
+      <h4>Support</h4>
+      <p>For questions about the SMS alert program, contact <a href="mailto:ops@devkhtxpdr.com">ops@devkhtxpdr.com</a>.</p>
+    </section>
+
+    <!-- Privacy Policy -->
+    <section id="privacy-policy">
+      <h3>Privacy Policy</h3>
+      <p><em>Last updated: March 2026</em></p>
+
+      <h4>Information We Collect</h4>
+      <p>In connection with our SMS alert program, we collect the following information from participating employees:</p>
+      <ul>
+        <li>Mobile phone number</li>
+        <li>Employee name and role</li>
+        <li>Opt-in consent status and date</li>
+      </ul>
+
+      <h4>How We Use Your Information</h4>
+      <p>Your mobile phone number is used exclusively to deliver operational SMS alerts related to system status, pipeline health, and fleet vehicle notifications. We do not use your phone number for marketing, promotional messages, or any purpose unrelated to operational alerting.</p>
+
+      <h4>SMS Opt-In Data and Consent</h4>
+      <div class="highlight-box">
+        <p><strong>We do not sell, share, rent, or distribute your mobile phone number, SMS opt-in data, or consent information to any third parties for marketing or promotional purposes.</strong></p>
+      </div>
+      <p>Your opt-in consent data is stored securely and is accessible only to authorized operations personnel for the sole purpose of managing the SMS alert program.</p>
+
+      <h4>Data Security</h4>
+      <p>We implement appropriate technical and organizational measures to protect your personal information, including:</p>
+      <ul>
+        <li>Encryption of data in transit (TLS/HTTPS) and at rest</li>
+        <li>Role-based access controls limiting data access to authorized personnel</li>
+        <li>Secure cloud infrastructure with regular security updates</li>
+        <li>Environment variable management for credentials (never stored in code)</li>
+      </ul>
+
+      <h4>Data Retention</h4>
+      <p>Your phone number and opt-in records are retained for the duration of your employment. Upon termination of employment or opt-out, your SMS data is removed within 30 days.</p>
+
+      <h4>Your Rights</h4>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Opt out of SMS alerts at any time by replying <strong>STOP</strong></li>
+        <li>Request information about the data we hold about you</li>
+        <li>Request deletion of your phone number from our systems</li>
+      </ul>
+
+      <h4>Changes to This Policy</h4>
+      <p>We may update this privacy policy from time to time. Employees will be notified of material changes via company communication channels. The "Last updated" date at the top of this section reflects the most recent revision.</p>
+
+      <h4>Contact Us</h4>
+      <p>For privacy-related inquiries, contact us at:<br>
+        <strong>Email:</strong> <a href="mailto:ops@devkhtxpdr.com">ops@devkhtxpdr.com</a><br>
+        <strong>Company:</strong> Paul Davis Restoration — Houston, TX
+      </p>
+    </section>
+
+    <!-- Terms of Service -->
+    <section id="terms-of-service">
+      <h3>SMS Terms of Service</h3>
+      <p><em>Last updated: March 2026</em></p>
+
+      <h4>Program Description</h4>
+      <p>Paul Davis Restoration ("we," "us," "our") offers an internal SMS alert program ("OpsKPI Alerts") that sends operational notifications to enrolled employees regarding system status, data pipeline health, and fleet vehicle alerts.</p>
+
+      <h4>Consent</h4>
+      <p>By providing your mobile phone number and opting in to the program, you consent to receive automated text messages from Paul Davis Restoration at the number provided. Consent is not a condition of employment, and you may opt out at any time.</p>
+
+      <h4>Message Frequency</h4>
+      <p>Message frequency varies. You can expect approximately 1–5 messages per week under normal operations. Message volume may temporarily increase during system incidents.</p>
+
+      <h4>Costs</h4>
+      <p>Message and data rates may apply depending on your mobile carrier and plan. Paul Davis Restoration is not responsible for any charges from your carrier.</p>
+
+      <h4>Opt-Out</h4>
+      <p>You may opt out at any time by replying <strong>STOP</strong> to any message. After opting out, you will receive a single confirmation message and no further texts will be sent. To re-enroll, contact your operations manager.</p>
+
+      <h4>Help</h4>
+      <p>Reply <strong>HELP</strong> to any message for support information, or contact <a href="mailto:ops@devkhtxpdr.com">ops@devkhtxpdr.com</a>.</p>
+
+      <h4>Carrier Disclaimer</h4>
+      <p>Carriers (AT&amp;T, T-Mobile, Verizon, etc.) are not liable for delayed or undelivered messages. Message delivery is subject to effective transmission from your network operator.</p>
+
+      <h4>Modifications</h4>
+      <p>We reserve the right to modify these terms at any time. Continued participation in the program after changes constitutes acceptance of the updated terms.</p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>&copy; 2026 Paul Davis Restoration — Houston, TX. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#sms-program">SMS Program</a>
+      <a href="#privacy-policy">Privacy Policy</a>
+      <a href="#terms-of-service">SMS Terms of Service</a>
+      <a href="mailto:ops@devkhtxpdr.com">Contact Us</a>
+    </div>
+  </footer>
+
+</body>
+</html>
