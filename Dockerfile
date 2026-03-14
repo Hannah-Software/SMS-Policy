@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 # Copy SMS policy file from OPsKPI repo if available
-COPY sms_policy.html . 2>/dev/null || echo "SMS policy file not included"
+COPY sms_policy.html .
 
 # Railway config
 ENV PORT=8000
